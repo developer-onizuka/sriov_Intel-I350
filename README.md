@@ -24,7 +24,7 @@ UBUNTU_CODENAME=focal
 ```
 $ vi /etc/default/grub
 ...
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_iommu=on vfio_iommu_type1.allow_unsafe_interrupts=1 iommu=pt rdblacklist=igbvf pci=assign-busses"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_iommu=on vfio_iommu_type1.allow_unsafe_interrupts=1 iommu=pt pci=assign-busses"
 ...
 
 $ sudo update-grub
