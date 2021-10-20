@@ -43,6 +43,11 @@ $ reboot
 
 # 3. Check
 ```
+$ cat /sys/bus/pci/devices/0000\:06\:00.0/sriov_numvfs 
+4
+$ cat /sys/bus/pci/devices/0000\:06\:00.1/sriov_numvfs 
+4
+
 $ lspci |grep I350
 06:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
 06:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
