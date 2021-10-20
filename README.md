@@ -32,6 +32,7 @@ $ sudo update-grub
 $ sudo su
 # cat <<EOF > /etc/modprobe.d/igb.conf 
 options igb max_vfs=4
+blacklist igbvf
 EOF
 
 # exit
@@ -53,4 +54,30 @@ $ lspci |grep I350
 06:11.1 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
 06:11.4 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
 06:11.5 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+
+$ sudo lspci -nnk -d 8086:1520
+06:10.0 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:10.1 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:10.4 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:10.5 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:11.0 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:11.1 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:11.4 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
+06:11.5 Ethernet controller [0200]: Intel Corporation I350 Ethernet Controller Virtual Function [8086:1520] (rev 01)
+	Subsystem: Intel Corporation I350 Ethernet Controller Virtual Function [8086:00a2]
+	Kernel modules: igbvf
 ```
