@@ -42,6 +42,15 @@ $ reboot
 
 # 3. Check
 ```
-
-
+$ lspci |grep I350
+06:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+06:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+06:10.0 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:10.1 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:10.4 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:10.5 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:11.0 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:11.1 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:11.4 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
+06:11.5 Ethernet controller: Intel Corporation I350 Ethernet Controller Virtual Function (rev 01)
 ```
